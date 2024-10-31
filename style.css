@@ -1,0 +1,175 @@
+@font-face {
+    font-family: rub;
+    src: url(Rubik-Light.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: rub;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+}
+.wall {
+    position: absolute;
+    filter: brightness(0.6);
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.eva {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.eva-text {
+    z-index: 11;
+    font-size: 230px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    pointer-events: none;
+    margin-top: 150px;
+    padding: 0;
+}
+.eva-text-red {
+    z-index: 11;
+    font-size: 230px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    pointer-events: none;
+    margin-top: 150px;
+    padding: 0;
+}
+header {
+    background-color: black;
+    position: fixed;
+    height: 50px;
+    z-index: 999;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 10px;
+    align-items: center;
+}
+.header-but {
+    all: unset;
+    margin: 0px 40px 0px 20px;
+    cursor: pointer;
+    font-family: rub;
+    font-weight: 900;
+    font-size: 20px;
+    transition: ease-in-out .2s;
+}
+.header-but:hover {
+    color: red;
+    text-decoration: underline;
+}
+.text {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    z-index: 111;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    z-index: 1;
+    background-image: linear-gradient(165deg, black, rgb(0, 0, 0), rgb(88, 0, 0), rgb(110, 0, 0));
+    gap: 100px;
+}
+img {
+    width: 600px;
+    height: auto;
+    border-radius: 3rex;
+    transition: ease-in-out .3s;
+    cursor: default;
+    border-color: black;
+}
+.des {
+    border-radius: 3rex;
+    width: 800px;
+    height: 564px;
+    background: linear-gradient(rgb(105, 0, 0), rgb(83, 1, 1));
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    transition: ease-in-out .3s;
+    cursor: default;
+    border-color: black;
+}
+.des:hover {
+    border: 10px solid black;
+    scale: 1.03;
+}
+img:hover {
+    border: 10px solid black;
+    scale: 1.03;
+    width: 600px;
+}
+p {
+    padding: 20px 100px 20px 100px;
+}
+.main2 {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-345deg, black, rgb(0, 0, 0), rgb(88, 0, 0), rgb(110, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: black;
+    height: 100px;
+    width: 100vw;
+    font-size: 56px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cube {
+    width: 500px;
+    height: 500px;
+    border: solid white 2px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+.content {
+    border: solid white 2px;
+    width: 100px;
+    height: 100px;
+}
